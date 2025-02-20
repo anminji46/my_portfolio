@@ -1,0 +1,31 @@
+.DesignModal {
+  cursor: pointer;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,.9);
+  text-align: center;
+  // filter: blur(50px);
+  button {
+    cursor: pointer;
+    position: absolute;
+    right: 40px; top: 40px;
+    background: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+  }
+  .contents {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+}
