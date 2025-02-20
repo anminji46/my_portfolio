@@ -1,7 +1,7 @@
 .Main {
   .inner {
     width: 700px;
-    margin: 40px auto;
+    margin: 30px auto;
     .title {
       display: flex; 
       flex-wrap: wrap;
@@ -47,7 +47,17 @@
           }
         }
         .greetings {
-          line-height: 18px;
+          line-height: 20px;
+          span {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            span {
+              display: inline-block;
+              padding: 0 3px;
+              background: red;
+              color: #fff;
+            }
+          }
         }
         .hash {
           margin-top: 10px;

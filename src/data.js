@@ -149,7 +149,7 @@ const swiper = [
           markUp :"react, scss"
         },
       ],
-      link : "https://my-portfolio-3g6h.vercel.app/",
+      link : "https://anminji46.github.io/my_portfolio/",
       git : "https://github.com/anminji46/my_portfolio"
     },
     {

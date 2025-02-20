@@ -10,8 +10,9 @@ import contact from '../images/contact_thumbnail.jpg'
 
 import './Main.scss';
 
-function Main() {
 
+function Main() {
+  
   return (
     <div className='Main'>
       <div className='inner'>
@@ -27,7 +28,8 @@ function Main() {
             </div>
             <p className='greetings'>
               안녕하세요. 안민지입니다.<br />
-              처음 도전해보는 분야의 처음으로 만들어본 포트폴리오입니다.<br />
+              처음 도전해보는 분야이며 최선을 다해 만든 포트폴리오입니다.<br />
+              <span>전부 <span>react</span>로 작업했습니다.</span><br/>
               많이 부족하겠지만 예쁘게 봐주세요. 감사합니다!
             </p>
             <div className='hash'>
