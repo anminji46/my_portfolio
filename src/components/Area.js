@@ -1,9 +1,10 @@
 import React from 'react';
 import './Area.scss';
-// import About from '../pages/About';
 
 
 const Area = ({data : key, id, title, content, bgColor, color}) => {
+
+
 
   return (
     <div 

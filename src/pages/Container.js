@@ -7,16 +7,13 @@ import './Container.scss';
 
 
 const Container = () => {
-  let [contents, setContents] = useState(area);
   const [showButton, setShowButton] = useState(false);
-
   const scrollToTop = () => {
     window.scroll({
       top:0,
       behavior:'smooth'
     })
   }
-
   useEffect(()=>{
     const handleShowButton = () => {
       if (window.scrollY > 300) {
@@ -29,7 +26,8 @@ const Container = () => {
     return () => {
       window.removeEventListener("scroll",handleShowButton)
     }
-  }, [])
+  }, []);
+
 
   return (
     <div className='Container'>
@@ -38,10 +36,13 @@ const Container = () => {
       </header>
   
       {
-        contents.map((data)=>{
-          return <Area {...data} key={data.key} />
-        })
-      }
+        area.map((data, index)=>{
+          return <Area 
+            {...data} 
+            key={data.key}
+            />
+          })        
+        }
       {showButton && (
         <div className='scroll-Top'>
           <button onClick={scrollToTop}>TOP</button>

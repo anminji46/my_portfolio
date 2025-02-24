@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {  useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {menus} from '../data';
 import Thumbnail from '../images/Thumbnail.png';
@@ -10,15 +10,21 @@ import contact from '../images/contact_thumbnail.jpg'
 
 import './Main.scss';
 
-
 function Main() {
   
+  const moveToScroll = (menu) => {
+    // const menuValue = menu;
+    // console.log(menuValue);
+    // return menuValue;
+    return menu;
+  }
+
   return (
     <div className='Main'>
       <div className='inner'>
         <div className='title'>
           <div className='thumbnail'>
-            <Link to="/container/"><img src={Thumbnail} alt='Thumbnail' /></Link>
+            <Link to="/container"><img src={Thumbnail} alt='Thumbnail' /></Link>
           </div>
           <div className='text'>
             <h1>ANIMNJI's Portfolio</h1>
@@ -30,21 +36,34 @@ function Main() {
               안녕하세요. 안민지입니다.<br />
               처음 도전해보는 분야이며 최선을 다해 만든 포트폴리오입니다.<br />
               <span>전부 <span>react</span>로 작업했습니다.</span><br/>
-              많이 부족하겠지만 예쁘게 봐주세요. 감사합니다!
+              많이 부족하겠지만 예쁘게 봐주세요. 감사합니다!<br/>
             </p>
             <div className='hash'>
               <span>#REACT</span>
               <span>#VScode</span>
               <span>#Photoshop</span>
             </div>
+            <div className='ref'>
+            바로가기 버튼은 아직 구현중에 있습니다.<br/>
+            👈썸네일을 누르면 보실 수 있습니다~!
+            </div>
           </div>
         </div>
         <div className='link'>
           {
             menus.map(menu=> {
-              return <buttonBox>
-                <div><button key={menu.id}>{menu.menu}<span>go to</span></button></div>
-              </buttonBox>
+              return <div>
+                <Link to='/container' state={{ menu }}>
+                  <span 
+                    key={menu.id}
+                    onClick={()=>moveToScroll(menu.menu)}
+                  >{menu.menu}
+                    <button
+                      // onClick={moveToScroll}
+                    >go to</button>
+                  </span>
+                </Link>
+              </div>
             })
           }
         </div>

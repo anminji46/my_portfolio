@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [scrollMenu, setScrollMenu] = useState('');
+  
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop) 
   }
@@ -17,7 +17,6 @@ const Header = () => {
   });
 
   const scrollCallBack = (menu) => {
-    // setScrollMenu(menu)
     document.getElementById(menu).scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -26,11 +25,6 @@ const Header = () => {
       <Link to='/'><h1>ANMINJI's Portfolio</h1></Link>
       <nav>
         <ul>
-          {/* {
-            menus.map(menu=> {
-              return <li key={menu.id} onClick={()=>scrollCallBack(menu.menu)}>{menu.menu}</li>
-            })
-          } */}
           <li onClick={()=>scrollCallBack('About')}>About</li>
           <li onClick={()=>scrollCallBack('Skills')}>Skills</li>
           <li onClick={()=>scrollCallBack('Projects')}>Projects</li>

@@ -46,7 +46,7 @@ const area = [
       key : shortId.generate(),
       id : 'About',
       title : "제1장 : Hi, Im'Anminji!",
-      content : <About />,
+      content : <About ref={`aboutRef`}/>,
       bgColor : "white",
       color: "black",
     },
@@ -54,7 +54,7 @@ const area = [
       key : shortId.generate(),
       id : 'Skills',
       title : "제2장 : My Skills is...",
-      content : <Skills />,
+      content : <Skills ref={`skillsRef`} />,
       bgColor : "black",
       color: "white",
     },
@@ -411,6 +411,7 @@ const swiper = [
       ]
     },
   ]
+
 
 export {listThumbnail,area, swiper, menus, design}; 
 

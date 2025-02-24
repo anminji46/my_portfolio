@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import myEmoji from '../images/my_emoji_left.png'
 import html from '../images/html3.png'
 import css from '../images/css3.png'
@@ -18,6 +18,9 @@ import speechBubble from '../images/speech_bubble.png'
 import './Skills.scss';
 
 const Skills = () => {
+
+
+
   return (
     <div className='Skills'>
       <div className='overflow_hidden'>

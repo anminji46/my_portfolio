@@ -15,14 +15,14 @@ const PJSwiper = () => {
       slidesPerView={1}
       pagination={{ clickable: true }}
       navigation
-      // autoplay = {{
-      //   delay : 3000,
-      //   disableOnInteraction : false
-      // }}
+      autoplay = {{
+        delay : 3000,
+        disableOnInteraction : false
+      }}
       speed={500}
       loop = {true}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
     >
       {
         swiper.map( data =>{
