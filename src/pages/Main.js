@@ -1,4 +1,4 @@
-import React, {  useEffect, useRef, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {menus} from '../data';
 import Thumbnail from '../images/Thumbnail.png';
@@ -11,13 +11,7 @@ import contact from '../images/contact_thumbnail.jpg'
 import './Main.scss';
 
 function Main() {
-  
-  const moveToScroll = (menu) => {
-    // const menuValue = menu;
-    // console.log(menuValue);
-    // return menuValue;
-    return menu;
-  }
+
 
   return (
     <div className='Main'>
@@ -56,10 +50,8 @@ function Main() {
                 <Link to='/container' state={{ menu }}>
                   <span 
                     key={menu.id}
-                    onClick={()=>moveToScroll(menu.menu)}
                   >{menu.menu}
                     <button
-                      // onClick={moveToScroll}
                     >go to</button>
                   </span>
                 </Link>
