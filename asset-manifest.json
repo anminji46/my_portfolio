@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.27053ce2.css",
-    "main.js": "/my_portfolio/static/js/main.884531e4.js",
+    "main.css": "/my_portfolio/static/css/main.b43c6823.css",
+    "main.js": "/my_portfolio/static/js/main.350bef1f.js",
     "static/media/project_responsive.gif": "/my_portfolio/static/media/project_responsive.1fc620663e10bd92f382.gif",
     "static/media/project_pinterest.gif": "/my_portfolio/static/media/project_pinterest.3912565942b867fc53d9.gif",
     "static/media/project_time.gif": "/my_portfolio/static/media/project_time.6727b2d7f9fc8f7076ba.gif",
@@ -9,7 +9,6 @@
     "static/media/project_apple-store.gif": "/my_portfolio/static/media/project_apple-store.dc7a99ee1b5dd96929f2.gif",
     "static/media/project_portfolio.gif": "/my_portfolio/static/media/project_portfolio.599ce9b269ab87d070ce.gif",
     "static/media/project_first.gif": "/my_portfolio/static/media/project_first.382048003b953a608e37.gif",
-    "static/media/andal.png": "/my_portfolio/static/media/andal.f78c909fd6e340e31e83.png",
     "static/media/project_emotional-diary.gif": "/my_portfolio/static/media/project_emotional-diary.b66fcdea0350fc023f66.gif",
     "static/media/figma_cardnews1.png": "/my_portfolio/static/media/figma_cardnews1.d76ec7b5d19b41d8c0e5.png",
     "static/media/figma_cardnews2.png": "/my_portfolio/static/media/figma_cardnews2.5ff8d806a1e7719001e7.png",
@@ -54,11 +53,11 @@
     "static/media/photoshop4.png": "/my_portfolio/static/media/photoshop4.bfe327595893cdef9ebe.png",
     "static/media/skills_thumbnail.jpg": "/my_portfolio/static/media/skills_thumbnail.63a0e6237c843f35cc65.jpg",
     "index.html": "/my_portfolio/index.html",
-    "main.27053ce2.css.map": "/my_portfolio/static/css/main.27053ce2.css.map",
-    "main.884531e4.js.map": "/my_portfolio/static/js/main.884531e4.js.map"
+    "main.b43c6823.css.map": "/my_portfolio/static/css/main.b43c6823.css.map",
+    "main.350bef1f.js.map": "/my_portfolio/static/js/main.350bef1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.27053ce2.css",
-    "static/js/main.884531e4.js"
+    "static/css/main.b43c6823.css",
+    "static/js/main.350bef1f.js"
   ]
 }
