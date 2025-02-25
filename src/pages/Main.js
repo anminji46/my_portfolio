@@ -9,6 +9,7 @@ import design from '../images/design_thumbnail.jpg'
 import contact from '../images/contact_thumbnail.jpg'
 
 import './Main.scss';
+import Menu from '../components/Menu';
 
 function Main() {
 
@@ -18,7 +19,7 @@ function Main() {
       <div className='inner'>
         <div className='title'>
           <div className='thumbnail'>
-            <Link to="/container"><img src={Thumbnail} alt='Thumbnail' /></Link>
+            <Link to="/home"><img src={Thumbnail} alt='Thumbnail' /></Link>
           </div>
           <div className='text'>
             <h1>ANIMNJI's Portfolio</h1>
@@ -44,10 +45,10 @@ function Main() {
           </div>
         </div>
         <div className='link'>
-          {
+          {/* {
             menus.map(menu=> {
               return <div>
-                <Link to='/container' state={{ menu }}>
+                <Link to='/home' state={{ menu }}>
                   <span 
                     key={menu.id}
                   >{menu.menu}
@@ -57,7 +58,8 @@ function Main() {
                 </Link>
               </div>
             })
-          }
+          } */}
+          <Menu />
         </div>
         <div className='list'>
           <ul>
@@ -88,4 +90,4 @@ function Main() {
   )
 }
 
-export default Main
+export default Main;

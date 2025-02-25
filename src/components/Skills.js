@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useParams } from 'react-router-dom';
 import myEmoji from '../images/my_emoji_left.png'
 import html from '../images/html3.png'
 import css from '../images/css3.png'
@@ -18,33 +19,44 @@ import speechBubble from '../images/speech_bubble.png'
 import './Skills.scss';
 
 const Skills = () => {
+  const skillsRef = useRef(null);
+  const params = useParams();
+
+  useEffect(()=>{
+      if(params.userpath === 'skills') {
+        skillsRef.current?.scrollIntoView({behavior : "instant"})
+      }
+    }, [params.userpath])
 
 
 
   return (
-    <div className='Skills'>
-      <div className='overflow_hidden'>
-        <img className='emoji' src={myEmoji} alt='right' />
-        <div className='innerBox'>
-          <div className='skillBox'>
-            <img src={html} alt='html'/>
-            <img src={css} alt='css'/>
-            <img src={scss} alt='scss'/>
-            <img src={js} alt='js'/>
-            <img src={jq} alt='jq'/>
-            <img src={vue} alt='vue'/>
-            <img src={react} alt='react'/> 
-            <img src={vscode} alt='vscode'/> 
-            <img src={node} alt='node'/> 
-            <img src={github} alt='github'/> 
-            <img src={Al} alt='Al'/>
-            <img src={ps} alt='ps'/>
-            <img src={figma} alt='figma'/>
+    <div className='Skills' id='Skills' ref={skillsRef}>
+      <h1>- 제2장 : My skills is... -</h1>
+      <div className='container'>
+        <div className='overflow_hidden'>
+          <img className='emoji' src={myEmoji} alt='right' />
+          <div className='innerBox'>
+            <div className='skillBox'>
+              <img src={html} alt='html'/>
+              <img src={css} alt='css'/>
+              <img src={scss} alt='scss'/>
+              <img src={js} alt='js'/>
+              <img src={jq} alt='jq'/>
+              <img src={vue} alt='vue'/>
+              <img src={react} alt='react'/> 
+              <img src={vscode} alt='vscode'/> 
+              <img src={node} alt='node'/> 
+              <img src={github} alt='github'/> 
+              <img src={Al} alt='Al'/>
+              <img src={ps} alt='ps'/>
+              <img src={figma} alt='figma'/>
+            </div>
           </div>
+          <p>- my skills is...</p>
         </div>
-        <p>- my skills is...</p>
+        <img className='speechBubble' src={speechBubble} alt='' />
       </div>
-      <img className='speechBubble' src={speechBubble} alt='' />
     </div>
   )
 }

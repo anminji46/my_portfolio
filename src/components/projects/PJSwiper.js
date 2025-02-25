@@ -5,7 +5,7 @@ import {swiper} from '../../data';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './PJSwiper.scss';
+// import './PJSwiper.scss';
 
 const PJSwiper = () => {
   return (

@@ -6,66 +6,77 @@
 }
 
 .Skills {
-  position: relative;
-  border: 4px solid #000;
-  width: 1000px;
-  height: 600px;
-  background: #000;
-  box-sizing: content-box;
-  .overflow_hidden {
-    overflow: hidden;
+  margin: 200px 0;
+  // outline: 1px dotted red;
+  h1 {
+    margin-bottom:100px;
+    padding-top: 80px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .container {
     position: relative;
-    height: 100%;
-    // outline: 1px dotted red;
-    img.emoji {
-      position: absolute;
-      z-index: 1;
-      bottom: -45px;
-      right: -20px;
-      height: 350px;
-      width: auto;
-      // outline: 1px dotted red;
-    }
-    .innerBox {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    background: #000;
+    border: 4px solid #000;
+    box-sizing: content-box;
+    .overflow_hidden {
+      overflow: hidden;
       position: relative;
-      margin-top: 130px;
-      width: 100%;
-      height: 350px;
-      background: #fff;
-      .skillBox {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        row-gap: 25px;
-        padding: 60px 20px 0;
+      height: 100%;
+      // outline: 1px dotted red;
+      img.emoji {
+        position: absolute;
+        z-index: 1;
+        bottom: -45px;
+        right: -20px;
+        height: 350px;
+        width: auto;
         // outline: 1px dotted red;
-        img {
-          position: relative; z-index: 1;
-          width: 100px;
-          height: auto;
-          filter: grayscale(100%);
-          transition: .5s;
-          &:hover {
-            filter: none;
-            transform: scale(1.1);
+      }
+      .innerBox {
+        position: relative;
+        margin-top: 130px;
+        width: 100%;
+        height: 350px;
+        background: #fff;
+        .skillBox {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          row-gap: 25px;
+          padding: 60px 20px 0;
+          // outline: 1px dotted red;
+          img {
+            position: relative; z-index: 1;
+            width: 100px;
+            height: auto;
+            filter: grayscale(100%);
+            transition: .5s;
+            &:hover {
+              filter: none;
+              transform: scale(1.1);
+            }
           }
         }
       }
+      p {
+        margin-top: 40px;
+        font-family: 'Pretendard-Regular';
+        font-size: 30px;
+        text-align: center;
+        color: yellow;
+      }
     }
-    p {
-      margin-top: 40px;
-      font-family: 'Pretendard-Regular';
-      font-size: 30px;
-      text-align: center;
-      color: yellow;
+    .speechBubble {
+      position: absolute;
+      z-index: 1;
+      bottom: 220px; right: -140px;
+      width: 200px;
+      height: auto;
+      // opacity: 0;
     }
-  }
-  .speechBubble {
-    position: absolute;
-    z-index: 1;
-    bottom: 220px; right: -140px;
-    width: 200px;
-    height: auto;
-    // opacity: 0;
   }
 }
 

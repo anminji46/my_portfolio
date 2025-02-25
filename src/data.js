@@ -26,7 +26,6 @@ import bank2 from './images/400x400_b.png';
 import bank3 from './images/600x150_b.png';
 import free1 from './images/1200x250_f.png';
 import free2 from './images/400x400_f.png';
-import free3 from './images/andal.png';
 import cardnews1 from './images/figma_cardnews1.png';
 import cardnews2 from './images/figma_cardnews2.png';
 import cardnews3 from './images/figma_cardnews3.png';
