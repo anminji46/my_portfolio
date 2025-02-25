@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {menus} from '../data';
 import Thumbnail from '../images/Thumbnail.png';
 import about from '../images/about_thumbnail_02.jpg'
 import skills from '../images/skills_thumbnail.jpg'
@@ -39,26 +38,12 @@ function Main() {
               <span>#Photoshop</span>
             </div>
             <div className='ref'>
-            바로가기 버튼은 아직 구현중에 있습니다.<br/>
-            👈썸네일을 누르면 보실 수 있습니다~!
+            목차를 눌렀을때 이동은 구현중입니다.<br/>
+            👈썸네일과 바로가기 버튼👇을 이용하여 들어가시면 됩니다!
             </div>
           </div>
         </div>
         <div className='link'>
-          {/* {
-            menus.map(menu=> {
-              return <div>
-                <Link to='/home' state={{ menu }}>
-                  <span 
-                    key={menu.id}
-                  >{menu.menu}
-                    <button
-                    >go to</button>
-                  </span>
-                </Link>
-              </div>
-            })
-          } */}
           <Menu />
         </div>
         <div className='list'>

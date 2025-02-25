@@ -55,7 +55,10 @@ const Skills = () => {
           </div>
           <p>- my skills is...</p>
         </div>
-        <img className='speechBubble' src={speechBubble} alt='' />
+        <div className='speechBox'>
+          <img className='speechBubble' src={speechBubble} alt='' />
+          <p>이 외에도<br/>항상 새로운것을<br/>받아드릴 준비가<br/>되어있습니다!</p>
+        </div>
       </div>
     </div>
   )
