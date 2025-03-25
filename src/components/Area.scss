@@ -1,0 +1,20 @@
+.Area {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 1200px;
+  // min-width: 900px;
+  padding: 100px;
+  // background: #000;
+  // outline: 1px dotted red;
+  h2 {
+    padding-bottom: 130px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .content {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 850px;
+    // height: 500px;
+  }
+}

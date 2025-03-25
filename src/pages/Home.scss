@@ -1,0 +1,16 @@
+.Home {
+  .scroll-Top {
+    position: fixed; z-index: 999;
+    bottom: 15px; right: 250px;
+    button {
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      background: rgba(0, 0, 0,.9);
+      border: none;
+      border-radius: 50%;
+      color: #fff;
+      outline: none;
+    }
+  }
+}
