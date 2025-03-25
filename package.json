@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
@@ -21,8 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,8 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://anminji46.github.io/my_portfolio",
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  }
+  "homepage": "https://anminji46.github.io/my_portfolio"
 }
